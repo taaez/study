@@ -14,12 +14,6 @@ int main()
 		NewNode = SLL_CreateNode(i); // i를 데이터로 가지는 노드 생성
 		SLL_AppendNode(&List, NewNode); // 위에서 만든 노드를 리스트로 연결
 	}
-	Count = SLL_GetNodeCount(List);
-	for (i=0; i<Count; i++)
-	{
-		Current = SLL_GetNodeAt(List,  i);
-		printf("List[%d] : %d\n", i, Current->Data);
-	}
 
 	NewNode = SLL_CreateNode(-1);
 	SLL_InsertNewHead(&List, NewNode);

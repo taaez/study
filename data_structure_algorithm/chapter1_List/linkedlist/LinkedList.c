@@ -29,7 +29,7 @@ void SLL_AppendNode(Node** Head, Node* NewNode)
 		Node* Tail = (*Head);
 		while(Tail->NextNode != NULL)
 		{
-			Tail->NextNode = Tail;
+			Tail = Tail->NextNode;
 		}
 		Tail->NextNode = NewNode;
 		// NewNode->NextNode=NULL; 노드 자체를 만들때 만들어놨으므로 안해도 됨
