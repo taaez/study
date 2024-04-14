@@ -15,6 +15,7 @@ void LLS_DestroyStack(LinkedListStack* Stack)
 		Node* Popped = LLS_Pop(Stack);
 		LLS_DestroyNode(Popped);
 	}
+	// 일단 스택에 있는 노드들을 해제하고 Stack을 해제해야 메모리 누수가 발생하지 않는다.
 	
 	// 스택 자유저장소에서 해제
 	free(Stack);
