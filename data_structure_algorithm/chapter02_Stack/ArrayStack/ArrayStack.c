@@ -32,11 +32,13 @@ ElementType AS_Pop(ArrayStack* Stack)
 {
 	int Position = Stack->Top--;
 	return Stack->Nodes[Position].Data;
+	// Top을 1 줄이면서 반환
 }
 
 ElementType AS_Top(ArrayStack* Stack)
 {
 	return Stack->Nodes[Stack->Top].Data;
+	// Top에 변화는 x, Top에 있던 데이터 그대로 반환
 }
 
 int AS_GetSize(ArrayStack* Stack)
