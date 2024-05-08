@@ -9,7 +9,6 @@ private:
 	int Top;
 	int Capacity;
 	int* Array;
-
 public:
 	Stack(int N, int _Top)
 		:Capacity(N), Top(_Top) // 생성자를 이용해서 스택을 구현할 정수형 배열 생성
