@@ -53,7 +53,7 @@ int main()
 	int T;
 	int N, M;
 	
-	cin >> T; // 케이스의 몇 개인지
+	cin >> T; // 케이스가 몇 개인지
 	
 	while (T>0)
 	{
