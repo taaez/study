@@ -12,7 +12,6 @@ s.empty() 스택이 비어있는지 확인, 비어있으면 1 아니면 0
 
 using namespace std;
 
-
 int main ()
 {
     int T;
